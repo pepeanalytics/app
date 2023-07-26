@@ -1,0 +1,50 @@
+.login {
+  padding: 3rem;
+  padding-top: 0;
+  padding-bottom: 8rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subText {
+  font-size: 1.25rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-image: url("../assets/images/comingSoonBg.png");
+}
+
+.loginBtn {
+  padding: 1.5rem 3rem;
+  font-size: 1.25rem;
+}
+
+.loginBtn svg {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  margin-left: 1rem;
+}
+
+.loginBtn svg path {
+  fill: #fff;
+}

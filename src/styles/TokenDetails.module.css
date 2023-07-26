@@ -1,0 +1,257 @@
+.container {
+  background: transparent
+    radial-gradient(
+      closest-side at 50% 100%,
+      rgba(255, 0, 221, 0.34) 0%,
+      rgba(255, 0, 221, 0) 100%
+    )
+    0% 0% no-repeat padding-box;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4.25rem;
+}
+
+.bodyContainer {
+  padding: 3.75rem 2rem;
+  padding-top: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero {
+  font-size: 1.625rem;
+  color: var(--text-color);
+}
+
+.header {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.625rem;
+}
+
+.section {
+  padding: 3.875rem 0;
+}
+
+.subSection {
+  margin-top: 2.0625rem;
+}
+
+.basicInfoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.125rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9375rem;
+  margin: 0.5rem 0;
+}
+
+.infoRow span {
+  color: var(--primary-color);
+  margin-right: 0.625rem;
+}
+
+.basicInfoAddress {
+  text-decoration: underline;
+}
+
+.infoRow svg {
+  cursor: pointer;
+}
+.detectorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 2.8125rem;
+}
+
+.detectorLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+
+.detectorLeft img {
+  margin-right: 3.625rem;
+  height: auto;
+  width: 4.5rem;
+  object-fit: contain;
+}
+
+.detectorDetailsCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.attention {
+  border-bottom: 1px solid var(--green-header);
+  background: url(../assets/images/greenRadialBg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.attention .headerSuffix {
+  color: var(--green-header);
+  margin-left: 1.8725rem;
+}
+
+.attention path {
+  fill: var(--green-header);
+}
+
+.risk {
+  background: url(../assets/images/orangeRadialBg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #ee5018;
+}
+
+.risk .headerSuffix {
+  color: #ee5018;
+  margin-left: 1.8725rem;
+}
+
+.risk path {
+  fill: #ee5018;
+}
+
+.normal {
+  background: url(../assets/images/pinkRadialBg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.normal .headerSuffix {
+  color: var(--primary-color);
+  margin-left: 1.8725rem;
+}
+
+.normal path {
+  fill: var(--primary-color);
+}
+
+.detectorHeader {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+}
+
+.detectorDesc {
+  font-size: 0.9375rem;
+  opacity: 0.75;
+  line-height: 2;
+  margin-top: 1.625rem;
+}
+
+.downArrow {
+  cursor: pointer;
+}
+
+.downArrow svg {
+  transform: rotateX(180deg);
+  height: 2rem;
+  width: 2rem;
+}
+
+.liquidityAnalysis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrowsLeft img,
+.arrowsRight img {
+  height: 6.25rem;
+}
+
+.arrowsLeft img {
+  transform: rotateY(180deg);
+}
+
+.arrowsLeft img:first-child {
+  margin-right: 1rem;
+  opacity: 0.3;
+}
+
+.arrowsRight img:last-child {
+  margin-left: 1rem;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .basicInfoContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .detectorLeft img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .detectorLeft {
+    width: 100%;
+  }
+
+  .topSection {
+    margin-bottom: 2rem;
+  }
+
+  .liquidityAnalysis {
+    flex-direction: column;
+  }
+
+  .liquidityAnalysis > div:first-child {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .liquidityAnalysis > div:last-child {
+    width: 100%;
+  }
+
+  .detectorHeader {
+    flex-direction: column;
+  }
+
+  .attention .headerSuffix,
+  .headerSuffix {
+    margin-left: 0rem !important;
+    margin-top: 1rem;
+  }
+
+  .detectorContainer {
+    padding: 1.5rem;
+  }
+
+  .infoRow {
+    flex-direction: column;
+  }
+
+  .infoRow div:first-child {
+    margin-bottom: 1rem;
+  }
+}

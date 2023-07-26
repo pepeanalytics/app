@@ -1,0 +1,149 @@
+.values,
+.headers {
+  display: grid;
+  grid-template-columns: 1.75fr repeat(3, 1fr) 0.75fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.values {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.02);
+  color: #ac9ba5;
+  font-size: 1rem;
+  padding: 0.625rem 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.values::after {
+  position: absolute;
+  content: "";
+  width: 0.5rem;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  background-color: #ff0099;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.values:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.values:hover::after {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+}
+
+.header {
+  text-align: center;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.headerTitle {
+  color: #c67ba6;
+  margin-bottom: 0.75rem;
+  font-size: 0.625rem;
+}
+
+.table-item {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid lightgray;
+}
+
+.coinName {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coinImg {
+  object-fit: contain;
+  overflow: hidden;
+  width: 2.375rem;
+  height: 2.375rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.07);
+  margin-right: 1.125rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.red {
+  color: #e1007f;
+}
+
+.green {
+  color: #49b7ab;
+}
+
+.more {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 1rem;
+}
+
+.arrow svg {
+  width: 8px;
+}
+
+.accordion {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .values {
+    grid-template-columns: 1fr auto;
+    padding-right: 2rem;
+  }
+
+  .accordionContent {
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 100%;
+    padding-top: 18px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .accordionContent .value {
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-size: 0.8125rem;
+  }
+}

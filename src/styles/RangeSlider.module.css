@@ -1,0 +1,34 @@
+.rangeSlider {
+  position: relative;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  height: 0.625rem;
+  border: 1px solid #fff;
+  width: 100%;
+  min-width: 8.75rem;
+  background-image: linear-gradient(to right, #49b7ab, #e1007f);
+}
+
+.sliderBar {
+  height: 1.25rem;
+  background-color: #fff;
+  border-radius: 0.1875rem;
+  width: 0.3125rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
+  -o-border-radius: 0.1875rem;
+}
+
+.sliderPercent {
+  font-size: 1rem;
+  color: #e1007f;
+  text-align: center;
+  margin-top: 0.5rem;
+}

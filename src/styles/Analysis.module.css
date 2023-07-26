@@ -1,0 +1,757 @@
+.container {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.error {
+  color: #e1007f;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.analysisHeader {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  margin-bottom: 1.625rem;
+  text-align: center;
+}
+
+.header {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.625rem;
+}
+
+.section {
+  margin-top: 3.125rem;
+  margin-bottom: 4.375rem;
+  position: relative;
+}
+
+.othersTokenWrapper {
+  position: relative;
+  min-height: 150px;
+}
+
+.holderHeader svg {
+  margin-left: 1rem;
+}
+
+.holderHeader {
+  margin-top: 1.875rem;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  grid-gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.holderType,
+.tokenDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent
+    linear-gradient(269deg, #e1007f00 0%, rgba(225, 0, 127, 0.15) 100%);
+  margin-bottom: 0.625rem;
+  padding: 0.875rem 1.875rem;
+}
+
+.holderType:last-child {
+  margin-bottom: 0;
+}
+
+.holderTypeColor {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.holderTypeName,
+.tokenDetailsTitle {
+  font-size: 1.3125rem;
+  color: #49b7ab;
+}
+
+.holderTypePercent,
+.tokenDetailsRightSection {
+  font-size: 1.3125rem;
+  color: #fff;
+  margin-left: 2rem;
+  min-width: 6.25rem;
+  text-align: right;
+}
+
+.twoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.twoGrid .mobileHeader {
+  font-size: 0.5rem;
+  color: #c67ba6;
+}
+
+.value {
+  color: #ac9ba5;
+  font-size: 0.6875rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 18ch;
+}
+
+.addressText {
+  color: var(--primary-color);
+  font-size: 2.125rem;
+  margin-bottom: 50;
+}
+
+.linkContainer {
+  font-size: 0.625rem;
+}
+
+.linkContainer svg {
+  margin-left: 1rem;
+  width: 0.8125rem;
+}
+
+.fundedByButton {
+  cursor: pointer;
+  background-color: var(--text-color);
+  border-radius: 8px;
+  padding: 0.7625rem 1.625rem 0.5rem 1.125rem;
+  border: none;
+  margin: 0.625rem 0;
+}
+
+.fundedByButton:active {
+  transition-duration: 100ms;
+  transform: scale(0.97);
+}
+
+.fundedByButton img {
+  width: 8.875rem;
+  height: 1.875rem;
+}
+
+.holdingCoinSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem 0.25rem;
+  overflow: hidden;
+  transition-duration: 500ms;
+}
+.holdingsSection {
+  margin-bottom: -4.375rem !important;
+}
+
+.holdingHidden {
+  transition-duration: 500ms;
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.holdingCoinCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.125rem;
+  background: transparent
+    linear-gradient(269deg, #e1007f00 0%, rgba(225, 0, 127, 0.15) 100%);
+}
+
+.holdingCoinCard img {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  object-fit: cover;
+  margin-right: 0.75rem;
+  grid-column: span 1;
+}
+
+.coinName {
+  font-size: 1rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+  max-width: 15ch;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.coinAmount {
+  font-size: 0.8125rem;
+  color: var(--text-color);
+  max-width: 18ch;
+}
+
+.hideButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.seeTx {
+  font-size: 0.625rem;
+  color: #c67ba6;
+  border-color: #c67ba6;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-width: 4px;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.seeTx svg {
+  width: 0.875rem;
+  margin-left: 0.625rem;
+}
+
+.seeFullList {
+  background-color: #fff !important;
+  color: #ff0086 !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.expand {
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+  pointer-events: all;
+}
+
+.hide {
+  position: sticky;
+  bottom: 0;
+  transform: translateY(5rem);
+  -webkit-transform: translateY(5rem);
+  -moz-transform: translateY(5rem);
+  -ms-transform: translateY(5rem);
+  -o-transform: translateY(5rem);
+  pointer-events: all;
+}
+
+.hideButtonWrapper.hide svg {
+  margin-left: 1rem;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.hideButtonWrapper.expand svg {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+
+.seeFullList svg path {
+  fill: #ff0086;
+}
+
+.hideBtnSection {
+  margin-top: 1rem;
+  position: relative;
+  height: 10rem;
+  bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.hideBtnHidden {
+  transform: rotate(270deg);
+}
+
+.hideBtnExpanded {
+  transform: rotate(90deg);
+}
+
+.blur {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  max-height: 12.3125rem;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #100c1300 0%,
+    #100c13e3 71%,
+    #100c13 100%
+  );
+}
+
+.historyRow {
+  padding: 1.25rem 1rem;
+  margin-bottom: 0.4375rem;
+  background: transparent
+    linear-gradient(269deg, #e1007f00 0%, rgba(225, 0, 127, 0.15) 100%);
+}
+
+.historyRow a {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.allocatedCoin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.creatorText {
+  font-size: 2.125rem;
+  margin: 1.25rem 0;
+}
+
+.communityText {
+  font-size: 2.125rem;
+  color: var(--primary-color);
+  margin: 1.25rem 0;
+}
+
+.arrowsLeft img,
+.arrowsRight img {
+  height: 6.25rem;
+}
+
+.arrowsLeft img {
+  transform: rotateY(180deg);
+}
+
+.arrowsLeft img:first-child {
+  margin-right: 1rem;
+  opacity: 0.3;
+}
+
+.arrowsRight img:last-child {
+  margin-left: 1rem;
+  opacity: 0.3;
+}
+
+.headerArrowContainer svg {
+  transform: rotate(180deg);
+}
+
+.historyRowMobileOpen .headerArrowContainer svg {
+  transform: rotate(0deg);
+}
+
+.headerArrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  align-self: flex-start;
+  max-height: 30px;
+}
+
+.accordionHeader {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr 0.6fr 18.75rem;
+  grid-gap: 1rem;
+  align-items: center;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0px;
+  color: #c67ba6;
+  padding: 0 1rem;
+}
+
+.accordionContentHeader {
+  display: grid;
+  grid-template-columns: 4.375rem 1fr 0.6fr 18.75rem;
+  grid-gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1.375rem 1rem;
+  padding-bottom: 0.875rem;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.accordionSection {
+  background: linear-gradient(
+    270deg,
+    rgba(225, 0, 127, 0) 0%,
+    rgba(225, 0, 127, 0.15) 100%
+  );
+  margin-bottom: 0.5rem;
+}
+
+.accordionSection.accordionSectionOpen {
+  background: linear-gradient(
+    334deg,
+    rgba(77, 77, 155, 0.3) 0%,
+    rgba(225, 0, 127, 0.3) 100%
+  );
+}
+
+.accordionContentHeaderIndex {
+  opacity: 0.76;
+}
+
+.accordionContentHeaderAmount {
+  color: #ac9ba5;
+}
+
+.accordionContentHeaderButton {
+  color: #ac9ba5;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.accordionContentHeaderButton span {
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.back svg {
+  margin-right: 0.5rem;
+  width: 0.5625rem;
+}
+
+.back span {
+  font-size: 0.6875rem;
+  opacity: 0.76;
+  text-decoration: underline;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.accordionContentHeaderAddress {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.border {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.33);
+  width: 100%;
+}
+
+.othersTokenText {
+  white-space: nowrap;
+}
+
+.othersTokenGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.25rem 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.othersTokenContainer {
+  padding: 3rem 4rem;
+  padding-bottom: 2rem;
+}
+
+.time {
+  background: #e1007f;
+  border: 1px solid #e1007f;
+  border-radius: 0.625rem;
+  opacity: 1;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
+  white-space: nowrap;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+}
+
+.historyContainer {
+  padding: 0 4rem;
+  padding-bottom: 2.25rem;
+}
+
+.historyHeadersGridContainer,
+.historyRowContainer {
+  display: grid;
+  grid-template-columns: 6.25rem 1fr 1fr 1fr 5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.875rem 1.25rem;
+  padding-bottom: 0.625rem;
+  align-items: center;
+  color: #ac9ba5;
+}
+
+.historyRowContainer > div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.historyHeadersGridContainer {
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0px;
+  color: #c67ba6;
+  padding-bottom: 0;
+  margin-bottom: 0.3125rem;
+}
+
+.historyRowContainer.buy {
+  background: transparent
+    linear-gradient(270deg, #ffffff00 0%, rgba(73, 183, 171, 0.15) 100%) 0% 0%
+    no-repeat padding-box;
+  margin-top: 0.3125rem;
+}
+
+.historyRowContainer.sell {
+  background: transparent
+    linear-gradient(270deg, #ffffff00 0%, rgba(225, 0, 127, 0.15) 100%) 0% 0%
+    no-repeat padding-box;
+  margin-top: 0.3125rem;
+}
+
+.coinNameContainer span {
+  color: #e1007f;
+  margin-left: 0.75rem;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.coinNameContainer img {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.coinNameContainer svg {
+  width: 0.875rem;
+}
+
+.black {
+  background-color: #100c13;
+  width: 6rem;
+}
+
+.linkContainer {
+  color: #c67ba6;
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.linkContainer svg {
+  margin-left: 0.5rem;
+}
+
+.buyType {
+  color: #49b7ab;
+  display: flex;
+  align-items: center;
+}
+
+.sellType {
+  color: #e1007f;
+  display: flex;
+  align-items: center;
+}
+
+.buyType svg,
+.sellType svg {
+  margin-right: 0.5rem;
+}
+
+.walletBoughtCoin {
+  position: relative;
+}
+
+.walletBoughtCoin .accordionContentHeader {
+  background: linear-gradient(
+    270deg,
+    rgba(225, 0, 127, 0) 0%,
+    rgba(225, 0, 127, 0.15) 100%
+  );
+}
+
+.holderSection {
+  margin-bottom: 3rem;
+}
+
+.historyContainer .accordionSection {
+  background: transparent;
+}
+
+@media (max-width: 1400px) {
+  .othersTokenGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .othersTokenGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dataGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .othersTokenGridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .othersTokenContainer {
+    padding: 1.5rem;
+  }
+
+  .historyContainer {
+    padding: 0 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .black {
+    display: none;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .accordionContentHeader,
+  .accordionHeader {
+    grid-template-columns: 50px 1fr 30px;
+  }
+
+  .dataGrid {
+    grid-gap: 0.5rem;
+  }
+
+  .holderType {
+    padding: 0.5rem 1rem;
+  }
+
+  .holderTypeName,
+  .tokenDetailsTitle,
+  .tokenDetailsRightSection,
+  .holderTypePercent {
+    font-size: 1rem;
+  }
+
+  .holderTypeColor {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .historyRowContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .coinNameContainer img {
+    margin-left: 0.5rem;
+  }
+
+  .header {
+    font-size: 1.25rem;
+  }
+
+  .othersTokenText,
+  .time {
+    font-size: 0.5rem;
+  }
+
+  .addressText {
+    overflow-wrap: anywhere;
+    font-size: 1.25rem;
+  }
+
+  .historyRow a {
+    font-size: 0.825rem;
+  }
+
+  .holdingCoinSection {
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+  }
+
+  .arrowsLeft {
+    display: none;
+  }
+
+  .allocatedCoin {
+    justify-content: space-between;
+  }
+  .allocatedCoin .pie-chart {
+    width: 4rem;
+  }
+
+  .creatorText,
+  .communityText {
+    font-size: 1rem;
+    margin: 0.625rem 0;
+  }
+
+  .holdingCoinCard img {
+    width: 21px;
+    height: 21px;
+  }
+  .coinName {
+    font-size: 0.825rem;
+  }
+
+  .coinAmount {
+    font-size: 0.6425rem;
+  }
+
+  .allocatedCoin img {
+    height: 4rem;
+  }
+  .analysisHeader {
+    font-size: 1.25rem;
+  }
+
+  .subAccordionHeader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .buyType svg,
+  .sellType svg {
+    height: 0.875rem;
+  }
+}

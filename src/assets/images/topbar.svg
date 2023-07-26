@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1933" height="127" viewBox="0 0 1933 127">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="1" r="1.058" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0d" stop-opacity="0.341"/>
+      <stop offset="1" stop-color="#f0d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect id="Top_bar" data-name="Top bar" width="1933" height="127" transform="translate(1933 127) rotate(180)" opacity="0.44" fill="url(#radial-gradient)"/>
+</svg>
