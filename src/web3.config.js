@@ -1,10 +1,11 @@
 import { goerli, mainnet } from "wagmi/chains";
+import { NETWORK } from "./consts";
 
 const web3Config = {
   openSeaLink: "https://opensea.io",
-  chain: goerli,
-  etherScanRoot: "https://goerli.etherscan.io/tx/",
-  contractAddress: "0xb4988e71d59594c2d12a2c758240782450d2e052",
+  chain: NETWORK === 'GOERLI' ? goerli : mainnet,
+  etherScanRoot: NETWORK === 'GOERLI' ? "https://goerli.etherscan.io/tx/" : "https://etherscan.io/tx/",
+  contractAddress: NETWORK === 'GOERLI' ? "0xb4988e71d59594c2d12a2c758240782450d2e052" : "0xfaa2471e93bd1cee3b0ab381c242ada8e1d1a759",
   abi: [
     {
       inputs: [
