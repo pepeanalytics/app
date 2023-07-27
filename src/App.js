@@ -82,29 +82,29 @@ function App() {
     }
   }, [setVisible]);
 
-  if (!loggedIn) {
-    return (
-      <>
-        <ToastContainer />
-        {isConnected ? (
-          <Login
-            buttonText={"Login"}
-            handleClick={() => {
-              setIsLoggingIn(true);
-              onLoginAttempt();
-            }}
-          />
-        ) : (
-          <Login
-            buttonText={"Connect"}
-            handleClick={() => {
-              open({});
-            }}
-          />
-        )}
-      </>
-    );
-  }
+  // if (!loggedIn) {
+  //   return (
+  //     <>
+  //       <ToastContainer />
+  //       {isConnected ? (
+  //         <Login
+  //           buttonText={"Login"}
+  //           handleClick={() => {
+  //             setIsLoggingIn(true);
+  //             onLoginAttempt();
+  //           }}
+  //         />
+  //       ) : (
+  //         <Login
+  //           buttonText={"Connect"}
+  //           handleClick={() => {
+  //             open({});
+  //           }}
+  //         />
+  //       )}
+  //     </>
+  //   );
+  // }
 
   return (
     <>

@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "start:eth": "NETWORK=ETH react-scripts start",
-    "start:goerli": "NETWORK=GOERLI react-scripts start",
+    "start:eth": "REACT_APP_NETWORK=ETH react-scripts start",
+    "start:goerli": "REACT_APP_NETWORK=GOERLI react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
