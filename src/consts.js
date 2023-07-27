@@ -5,4 +5,4 @@ export const SWAP_LINKS = {
   sushiswap: "https://app.sushi.com/swap",
 };
 
-export const NETWORK = process.env.NETWORK?.toUpperCase() || 'ETH';
+export const NETWORK = process.env.REACT_APP_NETWORK?.toUpperCase() || 'ETH';
