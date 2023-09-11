@@ -724,6 +724,10 @@ body {
   height: max-content;
 }
 
+.login-padding {
+  padding-top: 1.5rem;
+}
+
 @media (max-width: 1600px) {
   .hero-right img {
     width: 42rem;
@@ -1067,6 +1071,10 @@ body {
 @media (max-width: 768px) {
   :root {
     font-size: 16px;
+  }
+
+  .login-padding {
+    padding-top: 0;
   }
 
   .back-component {

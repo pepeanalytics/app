@@ -84,7 +84,7 @@ function App() {
 
   if (!loggedIn) {
     return (
-      <>
+      <div className="login-padding">
         <ToastContainer />
         {isConnected ? (
           <Login
@@ -102,7 +102,7 @@ function App() {
             }}
           />
         )}
-      </>
+      </div>
     );
   }
 
