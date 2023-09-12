@@ -21,6 +21,7 @@ import Sniper from "../pages/Sniper";
 import SeeMore from "../pages/SeeMore";
 import Login from "../pages/Login";
 import Logout from "../pages/Logout";
+import Verify from "../pages/Verify";
 
 export default function Content() {
   const { data, isLoading, isError, error } = useContractRead({
@@ -34,6 +35,7 @@ export default function Content() {
   return (
     <div className="content">
       <Routes>
+        <Route path="/verify/:code" element={<Verify />} />
         {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/logout" element={<Logout />} />
         <Route path="/" element={<Navigate replace to={"/main"} />} />

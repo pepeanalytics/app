@@ -82,9 +82,9 @@ function App() {
     }
   }, [setVisible]);
 
-  if (!loggedIn) {
+  if (!loggedIn && location.pathname.indexOf("/verify/") !== 0) {
     return (
-      <>
+      <div className="login-padding">
         <ToastContainer />
         {isConnected ? (
           <Login
@@ -102,7 +102,7 @@ function App() {
             }}
           />
         )}
-      </>
+      </div>
     );
   }
 

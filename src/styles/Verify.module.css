@@ -1,0 +1,96 @@
+.verifyWrapper,
+.copy {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-image: url("../assets/images/comingSoonBg.png");
+}
+
+.verifyBtn {
+  padding: 1.5rem 3rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.verifyBtn svg {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  margin-left: 1rem;
+}
+
+.verifyBtn svg path {
+  fill: #fff;
+}
+
+.header {
+  font-size: 1.75rem;
+  max-width: 40ch;
+  text-align: center;
+  line-height: 1.75;
+}
+
+.copyWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.copyText {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  max-width: 40ch;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 2px solid #fff;
+}
+
+.copyIcon {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0 1rem;
+  background-color: #ff0099 !important;
+}
+
+.copyIcon svg {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+}
+
+.copyIcon svg path {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .copyText {
+    font-size: 1rem;
+  }
+}
