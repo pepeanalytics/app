@@ -5,8 +5,7 @@ import { toast } from "react-toastify";
 import Button from "./Button";
 import { useParams } from "react-router-dom";
 
-export default function Copy() {
-  let { code } = useParams();
+export default function Copy({ signedMessage }) {
   return (
     <div className={styles.copy}>
       <div className={styles.header}>
@@ -14,11 +13,11 @@ export default function Copy() {
       </div>
 
       <div className={`${styles.copyWrapper}`}>
-        <div className={styles.copyText}>{code}</div>
+        <div className={styles.copyText}>{signedMessage}</div>
         <Button
           variant={"primary"}
           onClick={() => {
-            navigator.clipboard.writeText(code);
+            navigator.clipboard.writeText(signedMessage);
             toast.success("Copied to clipboard");
           }}
         >
